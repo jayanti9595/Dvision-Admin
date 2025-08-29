@@ -1,0 +1,27 @@
+.content-tabs{
+    padding: 20px;
+    .tab{
+        border: none;
+    border-radius: 8px;
+    color: #5e5d72;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 25px;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    margin: 5px 6px;
+    border: 1px solid $info-color; 
+    color: $info-color;
+    &.active {
+        background-color: $info-color;
+        color: white;
+        font-weight: 500;
+    }
+
+    &:hover:not(.active) {
+        background-color: $info-color;
+        color: white;
+    }
+    }
+}

@@ -1,0 +1,42 @@
+.active-btn{
+    padding: 3px 18px;
+    background: green;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px;
+    margin: auto;
+    width: fit-content;
+
+}
+.pending{
+    padding: 3px 18px;
+    background: #ffd044;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px;
+    margin: auto;
+    width: fit-content;
+
+}
+.ongoing{
+  padding: 0px 16px 3px;
+  background: rgb(6, 173, 250);
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  /* margin: auto; */
+  width: fit-content;
+  font-weight: 500;
+  font-size: 14px;
+
+}
+.cancel{
+padding: 3px 18px;
+background:red;
+text-align: center;
+color: #fff;
+border-radius: 25px;
+margin: auto;
+width: fit-content;
+
+}

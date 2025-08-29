@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+.main {
+ 
+
+  .sidebarWrapper {
+    width: 20%;
+    flex: 0 0 20%;
+    transition: all 0.3s ease-in-out;
+
+    .sidebar {
+      height: calc(100vh - 69px);
+   
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 20px 12px;
+      transition: all 0.3s linear;
+      width: 277px;
+      position: fixed;
+      top: 69px;
+      z-index: 3;
+      background-color: $bg-white;
+      scrollbar-width: thin;
+      scrollbar-color: $primary-color #fff;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $info-color;
+        border-radius: 8px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        .mc-sidebar-menu-item {
+          margin-bottom: 3px;
+
+          a {
+            flex-grow: 1;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: $color;
+            padding: 10px 16px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #f1f1f1;
+              border-radius: 8px;
+            }
+
+            &.active { 
+              background-color: $background-color;
+              color: $info-color;
+              border-radius: 8px;
+
+              svg {
+                color: $info-color;  
+              }
+            }
+          }
+
+          svg {
+            font-size: 22px;
+            transition: all 0.3s linear;
+            margin-right: 10px;
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import './variables.scss';
+
+.main-content{
+
+width: 80%;
+flex: 0 0 80%;
+margin-left: 250px;
+.content {
+    margin: 95px 30px 30px;
+    .backdiv{
+
+        svg{
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            z-index: 1;
+            font-size: 150px;
+            opacity: .8;
+            color: #1a9f53;
+            width: 155px;
+            height: 154px;
+            top: 8px;
+        }
+    }
+}
+
+
+.mc-ecommerce-card-head{
+    align-items: flex-start;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .mc-ecommerce-card-meta{
+        color: var(--bg-white);
+    font-size: 26px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    span{
+        display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+
+    }
+ 
+    }
+    .user-icon {
+        border-radius: 8px;
+
+        svg{
+         
+            font-size: 28px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 50px;
+            padding: 10px;
+            // background: linear-gradient(#27bf68, #1a9f53);
+            color: #89ecb3;
+        }
+
+    }
+}
+}

@@ -1,0 +1,75 @@
+.action-btn
+{
+  background-color: #77C3EC;
+  color: white;
+  border: none;
+}
+.add-btn{
+  background-color: #77C3EC;
+  border: none;
+  
+}
+
+.status-active{
+  height: 22px;
+  border-radius: 40px;
+  background-color: rgb(40, 199, 111);
+  
+  width: 75px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+  text-align: center;
+
+}
+
+.status-expired{
+    height: 22px;
+  border-radius: 40px;
+  background-color: #f57d2d;
+  
+  width: 75px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  justify-content: end;
+  /* margin-top: -28px; */
+}
+
+@media(max-width:540px) {
+  .searching {
+    width: 14rem !important;
+      margin-top: 35px!important;
+
+  }
+}
+
+.star-rating {
+  display: flex;
+}
+
+.star {
+  position: relative;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.filled {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  color: gold; 
+  white-space: nowrap;
+}
+
+.empty {
+  color: lightgray; 
+}

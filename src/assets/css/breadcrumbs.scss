@@ -1,0 +1,73 @@
+@import './variables.scss';
+
+.mc-card{
+    background-color: $bg-white;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 20px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    &:hover{
+        box-shadow: 0 15px 25px 0 rgba( 0, 0, 0, 6%);
+    }
+    .mc-breadcrumb {
+        align-items: center;
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+        .mc-breadcrumb-title {
+            font-size: 20px;
+            text-transform: capitalize;
+            margin-bottom: 0px;
+        }
+
+        .mc-breadcrumb-list {
+            align-items: center;
+            display: flex;
+            gap: 0;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+              margin-bottom: 0px;
+            .mc-breadcrumb-item {
+                align-items: center;
+                color: $bg-white;
+                display: flex;
+                font-size: 14px;
+                text-transform: capitalize;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                .mc-breadcrumb-link {
+                    color: $info-color;
+                    transition: all .3s linear;
+                    -webkit-transition: all .3s linear;
+                    -moz-transition: all .3s linear;
+                    -ms-transition: all .3s linear;
+                    -o-transition: all .3s linear;
+                    text-decoration: none;
+                     &::after {
+                        content: '~'; 
+                        color: $color;
+                        padding-left: 4px; 
+                        transition: all .3s linear;
+                        -webkit-transition: all .3s linear;
+                        margin: 0 6px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:768px){
+    .mc-card .mc-breadcrumb{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mc-card .mc-breadcrumb .mc-breadcrumb-list{
+        justify-content: center;
+    }
+}

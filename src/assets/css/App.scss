@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import'./header.scss';
+@import './variables.scss';
+@import'./sidebar.scss';
+@import './breadcrumbs.scss';
+@import './dashboard.scss';
+@import './profile.scss';
+@import './users.scss';
+@import './view-user.scss';
+@import './modal.scss';
+@import './status-button.scss';
+@import './content.scss';
+@import './login.scss';
+
+
+
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -moz-osx-font-smoothing: grayscale;
+    /* Firefox */
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    /* WebKit  */
+}
+body {
+    background-color: $primary-color!important;
+    font-family: $font-family!important;
+    color: $color;
+}
+input,textarea,button,select{
+    background: none;
+    border: none;
+    color:$color;
+    outline: none;
+}
+p{
+    font-size: 15px;
+}
+.btn-primary{
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 9px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    white-space: nowrap;
+    background-color: $info-color;
+}
+
+

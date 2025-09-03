@@ -147,7 +147,7 @@ const ManageSubscription = () => {
       setSubscriptionNameError('');
     }
 
-    if (!subscriptionType) {
+    if (subscriptionType < 0) {
       setSubscriptionTypeError('Please Select Subscription Type');
       hasError = true;
     } else {
@@ -239,7 +239,7 @@ const ManageSubscription = () => {
     if (action === 'Edit') {
       setShowEditModal(true);
       setSelectedIndex(null);
-      setSubscriptionType(data.subscription_type);
+      setSubscriptionType(data.subscription_type || 0);
       setSubscriptionName(data.subscription_name);
       setNoOfDays(data.no_of_days);
       setAmount(data.amount);
